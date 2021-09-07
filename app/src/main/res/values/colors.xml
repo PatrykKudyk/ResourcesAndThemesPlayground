@@ -7,4 +7,55 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="colorYellowLightLight">#fdedce</color>
+    <color name="colorYellowLight">#fcda9c</color>
+    <color name="colorYellow">#fac667</color>
+    <color name="colorYellowDark">#f9b639</color>
+    <color name="colorYellowDarkDark">#df9307</color>
+
+    <color name="colorRedLightLight">#ff0019</color>
+    <color name="colorRedLight">#cc0014</color>
+    <color name="colorRed">#97000F</color>
+    <color name="colorRedDark">#66000a</color>
+    <color name="colorRedDarkDark">#480004</color>
+    <color name="colorRedDarkDarkDark">#330005</color>
+
+    <color name="colorBlack">#0a0707</color>
+    
+    <color name="colorEcru">#f5ecdb</color>
+    <color name="colorEcruDark">#efdfc3</color>
+    <color name="colorEcruDarkDark">#e4ca9b</color>
+
+    <color name="colorOrange">#f38f25</color>
+
+    <color name="colorGreyLightLight">#c8c3b7</color>
+    <color name="colorGreyLight">#a6a08c</color>
+    <color name="colorGrey">#79725d</color>
+    <color name="colorGreyDark">#655f4e</color>
+    <color name="colorGreyDarkDark">#484437</color>
+
+    <color name="colorDirtyOrangeLightLight">#e8b796</color>
+    <color name="colorDirtyOrangeLight">#df9a6d</color>
+    <color name="colorDirtyOrange">#d67f45</color>
+    <color name="colorDirtyOrangeDark">#bc6429</color>
+    <color name="colorDirtyOrangeDarkDark">#924e20</color>
+
+    <color name="colorGreenLightLight">#70b762</color>
+    <color name="colorGreenLight">#569d48</color>
+    <color name="colorGreen">#3c6c32</color>
+    <color name="colorGreenDark">#305728</color>
+    <color name="colorGreenDarkDark">#1d3418</color>
+
+    <color name="colorDirtyGreenLightLight">#80bb5d</color>
+    <color name="colorDirtyGreenLight">#66a244</color>
+    <color name="colorDirtyGreen">#4f7e35</color>
+    <color name="colorDirtyGreenDark">#395a26</color>
+    <color name="colorDirtyGreenDarkDark">#233717</color>
+
+    <color name="colorBlueLightLight">#619e9e</color>
+    <color name="colorBlueLight">#4e7e7e</color>
+    <color name="colorBlue">#385c5c</color>
+    <color name="colorBlueDark">#273f3f</color>
+    <color name="colorBlueDarkDark">#132020</color>
 </resources>
