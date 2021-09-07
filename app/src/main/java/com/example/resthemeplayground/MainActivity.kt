@@ -8,12 +8,15 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.resthemeplayground.databinding.ActivityMainBinding
+import com.example.resthemeplayground.enums.ThemeEnum
+import com.example.resthemeplayground.helpers.ThemeHelper
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        setCorrectTheme()
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -31,5 +34,16 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+    }
+
+    private fun setCorrectTheme() {
+        when (ThemeHelper.theme){
+            ThemeEnum.Default -> setTheme(R.style.AppThemeDefault)
+            ThemeEnum.Light -> setTheme(R.style.AppThemeDefault)
+            ThemeEnum.Dark -> setTheme(R.style.AppThemeDefault)
+            ThemeEnum.Green -> setTheme(R.style.AppThemeDefault)
+            ThemeEnum.Red -> setTheme(R.style.AppThemeDefault)
+            ThemeEnum.Rasta -> setTheme(R.style.AppThemeDefault)
+        }
     }
 }
