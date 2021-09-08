@@ -7,13 +7,18 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.resthemeplayground.MainActivity
 import com.example.resthemeplayground.R
+import com.example.resthemeplayground.enums.ThemeEnum
+import com.example.resthemeplayground.helpers.ThemeHelper
 import com.example.resthemeplayground.models.Theme
+import com.google.android.material.card.MaterialCardView
 
 class ThemesRecyclerViewAdapter(private val context: Context) :
     RecyclerView.Adapter<ThemesRecyclerViewAdapter.ThemesRecyclerViewHolder>() {
 
     var items = ArrayList<Theme>()
+//    var selectedPosition
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ThemesRecyclerViewHolder {
@@ -25,6 +30,7 @@ class ThemesRecyclerViewAdapter(private val context: Context) :
     override fun onBindViewHolder(holder: ThemesRecyclerViewHolder, position: Int) {
         holder.initViews()
         holder.setValues(items[position])
+        holder.initListeners()
     }
 
     override fun getItemCount(): Int = items.size
@@ -36,14 +42,15 @@ class ThemesRecyclerViewAdapter(private val context: Context) :
 
     inner class ThemesRecyclerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        lateinit var nameTextView: TextView
-        lateinit var color1ImageView: ImageView
-        lateinit var color2ImageView: ImageView
-        lateinit var color3ImageView: ImageView
-        lateinit var color4ImageView: ImageView
-        lateinit var color5ImageView: ImageView
-        lateinit var color6ImageView: ImageView
-        lateinit var color7ImageView: ImageView
+        private lateinit var nameTextView: TextView
+        private lateinit var color1ImageView: ImageView
+        private lateinit var color2ImageView: ImageView
+        private lateinit var color3ImageView: ImageView
+        private lateinit var color4ImageView: ImageView
+        private lateinit var color5ImageView: ImageView
+        private lateinit var color6ImageView: ImageView
+        private lateinit var color7ImageView: ImageView
+        private lateinit var cvMain: MaterialCardView
 
         fun initViews() {
             nameTextView = itemView.findViewById(R.id.tvThemeName)
@@ -54,9 +61,16 @@ class ThemesRecyclerViewAdapter(private val context: Context) :
             color5ImageView = itemView.findViewById(R.id.ivColor5)
             color6ImageView = itemView.findViewById(R.id.ivColor6)
             color7ImageView = itemView.findViewById(R.id.ivColor7)
+            cvMain = itemView.findViewById(R.id.cvMain)
         }
 
         fun setValues(item: Theme) {
+            if (item.isSelected){
+                cvMain.setBackgroundColor(context.getColor(R.color.colorEcruDarkDark))
+            } else {
+                cvMain.setBackgroundColor(context.getColor(R.color.colorEcru))
+            }
+
             nameTextView.text = item.name
             if (item.colors.size >= 7) {
                 color1ImageView.background = context.getDrawable(item.colors[0])
@@ -66,6 +80,14 @@ class ThemesRecyclerViewAdapter(private val context: Context) :
                 color5ImageView.background = context.getDrawable(item.colors[4])
                 color6ImageView.background = context.getDrawable(item.colors[5])
                 color7ImageView.background = context.getDrawable(item.colors[6])
+            }
+        }
+
+        fun initListeners() {
+            cvMain.setOnClickListener {
+
+                ThemeHelper.theme = ThemeEnum.valueOf(nameTextView.text.toString())
+                (context as MainActivity).recreate()
             }
         }
     }

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/colorBackgroundFloating"
     tools:context=".ui.home.HomeFragment">
 
     <TextView
@@ -14,7 +15,7 @@
         android:fontFamily="@font/lato_bold"
         android:gravity="center_horizontal"
         android:text="@string/choose_theme"
-        android:textColor="@color/colorBlack"
+        android:textColor="?attr/colorOnPrimary"
         android:textSize="@dimen/margin_big"
         app:layout_constraintTop_toTopOf="parent" />
 

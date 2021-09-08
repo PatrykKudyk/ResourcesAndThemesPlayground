@@ -14,6 +14,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="colorBackgroundFloating">@color/colorEcruDarkDark</item>
     </style>
 
     <style name="AppThemeDefault" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
@@ -26,6 +27,8 @@
         <item name="colorOnSecondary">@color/colorEcru</item>
 
         <item name="colorAccent">@color/colorRedDarkDark</item>
+
+        <item name="colorBackgroundFloating">@color/colorEcruDarkDark</item>
     </style>
 
     <style name="AppThemeLight" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
@@ -38,6 +41,8 @@
         <item name="colorOnSecondary">@color/colorBlack</item>
 
         <item name="colorAccent">@color/colorRed</item>
+
+        <item name="colorBackgroundFloating">@color/colorYellowLightLight</item>
     </style>
 
     <style name="AppThemeDark" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
@@ -50,6 +55,7 @@
         <item name="colorOnSecondary">@color/colorBlack</item>
 
         <item name="colorAccent">@color/colorRedDarkDarkDark</item>
+        <item name="colorBackgroundFloating">@color/colorYellow</item>
     </style>
 
     <style name="AppThemeGreen" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
@@ -62,6 +68,7 @@
         <item name="colorOnSecondary">@color/colorEcruDarkDark</item>
 
         <item name="colorAccent">@color/colorGreyDarkDark</item>
+        <item name="colorBackgroundFloating">@color/colorGreenLightLight</item>
     </style>
 
     <style name="AppThemeRed" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
@@ -74,6 +81,7 @@
         <item name="colorOnSecondary">@color/colorEcruDarkDark</item>
 
         <item name="colorAccent">@color/colorBlack</item>
+        <item name="colorBackgroundFloating">@color/colorRedLightLight</item>
     </style>
 
     <style name="AppThemeRasta" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
@@ -86,6 +94,7 @@
         <item name="colorOnSecondary">@color/colorRedDark</item>
 
         <item name="colorAccent">@color/colorRedDarkDarkDark</item>
+        <item name="colorBackgroundFloating">@color/colorEcruDark</item>
     </style>
 
 </resources>
