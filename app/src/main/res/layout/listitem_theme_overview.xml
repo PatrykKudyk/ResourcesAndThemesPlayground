@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginTop="@dimen/margin_normal">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="16dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorEcru">
+
+            <TextView
+                android:id="@+id/tvThemeName"
+                style="@style/textBlackBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:textSize="@dimen/text_size_medium"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Nazwa motywu" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_marginEnd="@dimen/margin_medium"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:orientation="horizontal"
+                android:weightSum="7"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvThemeName">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_small"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="@dimen/margin_normal"
+                    app:strokeColor="@color/colorBlack"
+                    app:strokeWidth="2dp">
+
+                    <ImageView
+                        android:id="@+id/ivColor1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:background="@color/colorRed" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_small"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="@dimen/margin_normal"
+                    app:strokeColor="@color/colorBlack"
+                    app:strokeWidth="2dp">
+
+                    <ImageView
+                        android:id="@+id/ivColor2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:background="@color/colorRed" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_small"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="@dimen/margin_normal"
+                    app:strokeColor="@color/colorBlack"
+                    app:strokeWidth="2dp">
+
+                    <ImageView
+                        android:id="@+id/ivColor3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:background="@color/colorRed" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_small"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="@dimen/margin_normal"
+                    app:strokeColor="@color/colorBlack"
+                    app:strokeWidth="2dp">
+
+                    <ImageView
+                        android:id="@+id/ivColor4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:background="@color/colorRed" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_small"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="@dimen/margin_normal"
+                    app:strokeColor="@color/colorBlack"
+                    app:strokeWidth="2dp">
+
+                    <ImageView
+                        android:id="@+id/ivColor5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:background="@color/colorRed" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_small"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="@dimen/margin_normal"
+                    app:strokeColor="@color/colorBlack"
+                    app:strokeWidth="2dp">
+
+                    <ImageView
+                        android:id="@+id/ivColor6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:background="@color/colorRed" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_small"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="@dimen/margin_normal"
+                    app:strokeColor="@color/colorBlack"
+                    app:strokeWidth="2dp">
+
+                    <ImageView
+                        android:id="@+id/ivColor7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:background="@color/colorRed" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
