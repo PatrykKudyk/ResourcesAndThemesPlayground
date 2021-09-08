@@ -3,11 +3,11 @@ package com.example.resthemeplayground.ui.home
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.resthemeplayground.databinding.FragmentHomeBinding
 
 class HomeViewModel : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
+    fun initRecycler(binding: FragmentHomeBinding) {
+
     }
-    val text: LiveData<String> = _text
 }
