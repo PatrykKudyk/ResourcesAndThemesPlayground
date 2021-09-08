@@ -39,11 +39,11 @@ class MainActivity : AppCompatActivity() {
     private fun setCorrectTheme() {
         when (ThemeHelper.theme){
             ThemeEnum.Default -> setTheme(R.style.AppThemeDefault)
-            ThemeEnum.Light -> setTheme(R.style.AppThemeDefault)
-            ThemeEnum.Dark -> setTheme(R.style.AppThemeDefault)
-            ThemeEnum.Green -> setTheme(R.style.AppThemeDefault)
-            ThemeEnum.Red -> setTheme(R.style.AppThemeDefault)
-            ThemeEnum.Rasta -> setTheme(R.style.AppThemeDefault)
+            ThemeEnum.Light -> setTheme(R.style.AppThemeLight)
+            ThemeEnum.Dark -> setTheme(R.style.AppThemeDark)
+            ThemeEnum.Green -> setTheme(R.style.AppThemeGreen)
+            ThemeEnum.Red -> setTheme(R.style.AppThemeRed)
+            ThemeEnum.Rasta -> setTheme(R.style.AppThemeRasta)
         }
     }
 }

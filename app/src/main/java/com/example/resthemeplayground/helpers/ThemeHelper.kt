@@ -11,85 +11,73 @@ class ThemeHelper {
             Theme(
                 ThemeEnum.Default.name,
                 arrayListOf(
+                    R.color.colorYellow,
                     R.color.colorYellowDark,
-                    R.color.colorYellowDarkDark,
                     R.color.colorBlack,
+                    R.color.colorDirtyOrange,
                     R.color.colorDirtyOrangeDark,
-                    R.color.colorDirtyOrangeDarkDark,
                     R.color.colorEcru,
                     R.color.colorRedDarkDark
                 )
             ),
             Theme(
-                ThemeEnum.Default.name,
+                ThemeEnum.Light.name,
+                arrayListOf(
+                    R.color.colorYellowLightLight,
+                    R.color.colorYellowLight,
+                    R.color.colorBlack,
+                    R.color.colorDirtyOrangeLightLight,
+                    R.color.colorDirtyOrangeLightLight,
+                    R.color.colorBlack,
+                    R.color.colorRed
+                )
+            ),
+            Theme(
+                ThemeEnum.Dark.name,
                 arrayListOf(
                     R.color.colorYellowDark,
                     R.color.colorYellowDarkDark,
                     R.color.colorBlack,
                     R.color.colorDirtyOrangeDark,
                     R.color.colorDirtyOrangeDarkDark,
-                    R.color.colorEcru,
-                    R.color.colorRedDarkDark
+                    R.color.colorBlack,
+                    R.color.colorRedDarkDarkDark
                 )
             ),
             Theme(
-                ThemeEnum.Default.name,
+                ThemeEnum.Green.name,
                 arrayListOf(
-                    R.color.colorYellowDark,
-                    R.color.colorYellowDarkDark,
-                    R.color.colorBlack,
-                    R.color.colorDirtyOrangeDark,
-                    R.color.colorDirtyOrangeDarkDark,
-                    R.color.colorEcru,
-                    R.color.colorRedDarkDark
+                    R.color.colorGreen,
+                    R.color.colorGreenDark,
+                    R.color.colorEcruDarkDark,
+                    R.color.colorDirtyGreenDark,
+                    R.color.colorDirtyGreenDarkDark,
+                    R.color.colorEcruDarkDark,
+                    R.color.colorGreyDarkDark
                 )
             ),
             Theme(
-                ThemeEnum.Default.name,
+                ThemeEnum.Red.name,
                 arrayListOf(
-                    R.color.colorYellowDark,
-                    R.color.colorYellowDarkDark,
-                    R.color.colorBlack,
-                    R.color.colorDirtyOrangeDark,
-                    R.color.colorDirtyOrangeDarkDark,
-                    R.color.colorEcru,
-                    R.color.colorRedDarkDark
+                    R.color.colorRed,
+                    R.color.colorRedDark,
+                    R.color.colorEcruDarkDark,
+                    R.color.colorRedDarkDark,
+                    R.color.colorRedDarkDarkDark,
+                    R.color.colorEcruDarkDark,
+                    R.color.colorBlack
                 )
             ),
             Theme(
-                ThemeEnum.Default.name,
+                ThemeEnum.Rasta.name,
                 arrayListOf(
                     R.color.colorYellowDark,
+                    R.color.colorGreen,
+                    R.color.colorRed,
                     R.color.colorYellowDarkDark,
-                    R.color.colorBlack,
-                    R.color.colorDirtyOrangeDark,
-                    R.color.colorDirtyOrangeDarkDark,
-                    R.color.colorEcru,
-                    R.color.colorRedDarkDark
-                )
-            ),
-            Theme(
-                ThemeEnum.Default.name,
-                arrayListOf(
-                    R.color.colorYellowDark,
-                    R.color.colorYellowDarkDark,
-                    R.color.colorBlack,
-                    R.color.colorDirtyOrangeDark,
-                    R.color.colorDirtyOrangeDarkDark,
-                    R.color.colorEcru,
-                    R.color.colorRedDarkDark
-                )
-            ),
-            Theme(
-                ThemeEnum.Default.name,
-                arrayListOf(
-                    R.color.colorYellowDark,
-                    R.color.colorYellowDarkDark,
-                    R.color.colorBlack,
-                    R.color.colorDirtyOrangeDark,
-                    R.color.colorDirtyOrangeDarkDark,
-                    R.color.colorEcru,
-                    R.color.colorRedDarkDark
+                    R.color.colorGreenDarkDark,
+                    R.color.colorRedDark,
+                    R.color.colorRedDarkDarkDark
                 )
             )
         )
