@@ -18,8 +18,7 @@ class ThemeHelper {
                     R.color.colorDirtyOrangeDark,
                     R.color.colorEcru,
                     R.color.colorRedDarkDark
-                ),
-                true
+                )
             ),
             Theme(
                 ThemeEnum.Light.name,
@@ -31,8 +30,7 @@ class ThemeHelper {
                     R.color.colorDirtyOrangeLightLight,
                     R.color.colorBlack,
                     R.color.colorRed
-                ),
-                false
+                )
             ),
             Theme(
                 ThemeEnum.Dark.name,
@@ -44,8 +42,7 @@ class ThemeHelper {
                     R.color.colorDirtyOrangeDarkDark,
                     R.color.colorBlack,
                     R.color.colorRedDarkDarkDark
-                ),
-                false
+                )
             ),
             Theme(
                 ThemeEnum.Green.name,
@@ -57,8 +54,7 @@ class ThemeHelper {
                     R.color.colorDirtyGreenDarkDark,
                     R.color.colorEcruDarkDark,
                     R.color.colorGreyDarkDark
-                ),
-                false
+                )
             ),
             Theme(
                 ThemeEnum.Red.name,
@@ -70,8 +66,7 @@ class ThemeHelper {
                     R.color.colorRedDarkDarkDark,
                     R.color.colorEcruDarkDark,
                     R.color.colorBlack
-                ),
-                false
+                )
             ),
             Theme(
                 ThemeEnum.Rasta.name,
@@ -83,13 +78,13 @@ class ThemeHelper {
                     R.color.colorGreenDarkDark,
                     R.color.colorRedDark,
                     R.color.colorRedDarkDarkDark
-                ),
-                false
+                )
             )
         )
     }
 
     companion object {
         var theme: ThemeEnum = ThemeEnum.Default
+        var selectedThemePosition = 0
     }
 }

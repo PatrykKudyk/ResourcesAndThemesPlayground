@@ -2,6 +2,5 @@ package com.example.resthemeplayground.models
 
 data class Theme(
     val name: String,
-    val colors: ArrayList<Int>,
-    var isSelected: Boolean
+    val colors: ArrayList<Int>
 )

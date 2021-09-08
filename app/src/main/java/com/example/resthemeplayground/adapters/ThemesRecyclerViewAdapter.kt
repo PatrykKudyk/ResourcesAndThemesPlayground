@@ -6,19 +6,18 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.example.resthemeplayground.MainActivity
 import com.example.resthemeplayground.R
 import com.example.resthemeplayground.enums.ThemeEnum
 import com.example.resthemeplayground.helpers.ThemeHelper
 import com.example.resthemeplayground.models.Theme
-import com.google.android.material.card.MaterialCardView
 
 class ThemesRecyclerViewAdapter(private val context: Context) :
     RecyclerView.Adapter<ThemesRecyclerViewAdapter.ThemesRecyclerViewHolder>() {
 
-    var items = ArrayList<Theme>()
-//    var selectedPosition
+    private var items = ArrayList<Theme>()
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ThemesRecyclerViewHolder {
@@ -29,8 +28,8 @@ class ThemesRecyclerViewAdapter(private val context: Context) :
 
     override fun onBindViewHolder(holder: ThemesRecyclerViewHolder, position: Int) {
         holder.initViews()
-        holder.setValues(items[position])
-        holder.initListeners()
+        holder.setValues(items[position], position)
+        holder.initListeners(position)
     }
 
     override fun getItemCount(): Int = items.size
@@ -50,7 +49,7 @@ class ThemesRecyclerViewAdapter(private val context: Context) :
         private lateinit var color5ImageView: ImageView
         private lateinit var color6ImageView: ImageView
         private lateinit var color7ImageView: ImageView
-        private lateinit var cvMain: MaterialCardView
+        private lateinit var clMain: ConstraintLayout
 
         fun initViews() {
             nameTextView = itemView.findViewById(R.id.tvThemeName)
@@ -61,14 +60,14 @@ class ThemesRecyclerViewAdapter(private val context: Context) :
             color5ImageView = itemView.findViewById(R.id.ivColor5)
             color6ImageView = itemView.findViewById(R.id.ivColor6)
             color7ImageView = itemView.findViewById(R.id.ivColor7)
-            cvMain = itemView.findViewById(R.id.cvMain)
+            clMain = itemView.findViewById(R.id.clMain)
         }
 
-        fun setValues(item: Theme) {
-            if (item.isSelected){
-                cvMain.setBackgroundColor(context.getColor(R.color.colorEcruDarkDark))
+        fun setValues(item: Theme, position: Int) {
+            if (position == ThemeHelper.selectedThemePosition){
+                clMain.setBackgroundColor(context.getColor(R.color.colorEcruDarkDark))
             } else {
-                cvMain.setBackgroundColor(context.getColor(R.color.colorEcru))
+                clMain.setBackgroundColor(context.getColor(R.color.colorEcru))
             }
 
             nameTextView.text = item.name
@@ -83,9 +82,9 @@ class ThemesRecyclerViewAdapter(private val context: Context) :
             }
         }
 
-        fun initListeners() {
-            cvMain.setOnClickListener {
-
+        fun initListeners(position: Int) {
+            clMain.setOnClickListener {
+                ThemeHelper.selectedThemePosition = position
                 ThemeHelper.theme = ThemeEnum.valueOf(nameTextView.text.toString())
                 (context as MainActivity).recreate()
             }
